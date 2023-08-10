@@ -1,33 +1,53 @@
-ul{
-    display: flex;
-    gap: 20px;
-    padding-bottom: 20px;
+.menu img{
+    float: left;
+    width: 148px;
+    padding: 18px;
 }
 
-a{
-    color: blue;
+.menu ul{
+    list-style-type: none; 
+    /**removes the bullets. A navigation bar does not need list markers**/
+    overflow: hidden;
+    position: -webkit-sticky; /**Safari**/
+    position: sticky; /**create a sticky navbar**/
+    top: 0;
+
+}
+.menu li{
+    float: right;
 }
 
-figure{
-    transition: all 0.5s ease;
-    display: flex;
-    align-items: center;
-    justify-content:left;
-}
-
-figure:hoover{
-    filter: grayscale(1);
-}
-
-section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-h1, h2, p, footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.menu li a{
+    display: block;
+    color: black;
     text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    background-color: #FED758;
+}
+
+.cabecalho{
+    background-color: #00BF93;
+    width: auto;
+    height: auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.text section{
+    align-items: center;
+}
+
+.text{
+    width: auto;
+    height: auto;
+    padding: 100px;
+    text-align: center;
+}
+
+.rodap section{
+    background-color: #00BF93;
 }
